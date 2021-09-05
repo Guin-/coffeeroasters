@@ -1,8 +1,10 @@
 function Navigation () {
   return (
-    <div>
-      Navigation
-    </div>
+    <ul>
+      <li>Home</li>
+      <li>About us</li>
+      <li>Create your plan</li>
+    </ul>
   )
 }
 
