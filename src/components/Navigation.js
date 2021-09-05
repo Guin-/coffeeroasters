@@ -1,9 +1,11 @@
+import {NavLink} from 'react-router-dom';
+
 function Navigation () {
   return (
     <ul>
-      <li>Home</li>
-      <li>About us</li>
-      <li>Create your plan</li>
+      <NavLink to='/'>Home</NavLink>
+      <NavLink to='/about'>About us</NavLink>
+      <NavLink to='/subscribe'>Create your plan</NavLink>
     </ul>
   )
 }

@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom';
+
 function Footer () {
   return (
     <div>
       <ul>
-        <li>Home</li>
-        <li>About us</li>
-        <li>Create your plan</li>
+        <Link to='/'>Home</Link>
+        <Link to='/about'>About us</Link>
+        <Link to='/subscribe'>Create your plan</Link>
       </ul>
     </div>
   )
