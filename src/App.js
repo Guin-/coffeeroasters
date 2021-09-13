@@ -13,6 +13,7 @@ import Subscribe from './components/Subscribe';
 function App() {
   return (
     <Router>
+      <div className="bg-lightCream px-6 pt-2 pb-20 md:px-10 md:pt-10 lg:px-20 lg:pt-11 lg:pb-24">
       <Navigation/>
       <Switch>
         <Route exact path="/" component={Home}/>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/subscribe" component={Subscribe}/>
       </Switch>
       <Footer/>
+      </div>
     </Router>
   );
 }
