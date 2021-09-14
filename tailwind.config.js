@@ -3,6 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
+      white: '#fff',
       darkCyan: '#0E8784',
       darkGray: '#333D4B',
       paleOrange: '#FDD6BA',
@@ -24,7 +25,12 @@ module.exports = {
     extend: {
       height: theme => ({
         "screen-nav": "calc(100vh - 200px)",
-      })
+      }),
+      backgroundImage: {
+        'hero-desktop': "url('./assets/home/desktop/image-hero-coffeepress.jpg')",
+        'hero-tablet': "url('./assets/home/tablet/image-hero-coffeepress.jpg')",
+        'hero-mobile': "url('./assets/home/mobile/image-hero-coffeepress.jpg')",
+      }
     },
   },
   variants: {
