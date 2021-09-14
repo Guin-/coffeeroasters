@@ -21,7 +21,11 @@ module.exports = {
       lg: ['40px', '48px'],
       xl: ['72px', '72px'],
     },
-    extend: {},
+    extend: {
+      height: theme => ({
+        "screen-nav": "calc(100vh - 200px)",
+      })
+    },
   },
   variants: {
     extend: {},

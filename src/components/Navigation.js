@@ -26,10 +26,10 @@ function Navigation () {
             </button>
         </div>
         <div className={"lg:flex flex-grow items-center" + (navbarOpen ? " flex" : " hidden")}>
-          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-            <NavLink to='/' className="flex items-center px-3 py-2">Home</NavLink>
-            <NavLink to='/about' className="flex items-center px-3 py-2">About us</NavLink>
-            <NavLink to='/subscribe' className="flex items-center px-3 py-2">Create your plan</NavLink>
+          <ul className="flex flex-col lg:flex-row list-none w-full md:w-auto lg:ml-auto h-screen-nav sm:h-auto mt-8 sm:mt-0 text-sm sm:text-xs sm:uppercase sm:text-gray font-serif sm:font-sans bg-gradient-to-b from-lightCream to-white sm:bg-none">
+            <NavLink to='/' className="mx-auto px-3 py-4">Home</NavLink>
+            <NavLink to='/about' className="mx-auto px-3 py-4">About Us</NavLink>
+            <NavLink to='/subscribe' className="mx-auto px-3 py-4">Create Your Plan</NavLink>
           </ul>
         </div>
         </div>
