@@ -2,14 +2,14 @@ function Home () {
   return (
     <div>
       <header>
-        <div className="hero-image">
-          <div className="hero-content">
-            <h1 className="text-darkCyan">Great coffee made simple.</h1>
-            <p>
+        <div className="hero-image rounded-lg bg-hero-mobile md:bg-hero-tablet lg:bg-hero-desktop bg-cover h-full">
+          <div className="hero-content flex flex-col space-between items-center md:items-start px-6 py-24 md:pl-14 md:pr-0 md:w-96 lg:w-2/4 lg:pl-20 lg:py-28">
+            <h1 className="text-white text-lg lg:text-xl">Great coffee<br /> made simple.</h1>
+            <p className="text-lightCream text-center md:text-left pb-12 pt-6 lg:pr-20">
               Start your mornings with the world’s best coffees. Try our expertly curated artisan
               coffees from our best roasters delivered directly to your door, at your schedule.
             </p>
-            <button>Create your plan</button>
+            <button className="text-lightCream bg-darkCyan font-serif rounded w-56 px-8 py-4">Create your plan</button>
           </div>
         </div>
       </header>
