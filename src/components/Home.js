@@ -1,3 +1,9 @@
+import CollectionItem from './CollectionItem';
+import granEspresso from '../assets/home/desktop/image-gran-espresso.png';
+import planalto from '../assets/home/desktop/image-planalto.png';
+import piccollo from '../assets/home/desktop/image-piccollo.png';
+import danche from '../assets/home/desktop/image-danche.png';
+
 function Home () {
   return (
     <div>
@@ -14,27 +20,15 @@ function Home () {
         </div>
       </header>
       <main>
-        <section className="collection">
+        <section className="collection py-28">
           <div className="collection-title">
-            <h1>Our collection</h1>
+            <h1 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-gray to-white text-collectionMobile md:text-collectionTablet lg:text-collectionDesktop">our collection</h1>
           </div>
-          <div className="collection-items">
-            <div className="collection-item">
-              Gran Espresso
-              Light and flavorful blend with cocoa and black pepper for an intense experience
-            </div>
-            <div className="collection-item">
-              Planalto
-              Brazilian dark roast with rich and velvety body, and hints of fruits and nuts
-            </div>
-            <div className="collection-item">
-              Piccollo
-              Mild and smooth blend featuring notes of toasted almond and dried cherry
-            </div>
-            <div className="collection-item">
-              Danche
-              Ethiopian hand-harvested blend densely packed with vibrant fruit notes
-            </div>
+          <div className="collection-items flex flex-col lg:flex-row md:px-14 lg:px-20 lg:justify-between md:-mt-12">
+            <CollectionItem img={granEspresso} title='Gran Espresso' description='Light and flavorful blend with cocoa and black pepper for an intense experience' />
+            <CollectionItem img={planalto} title='Planalto' description='Brazilian dark roast with rich and velvety body, and hints of fruits and nuts' />
+            <CollectionItem img={piccollo} title='Piccollo' description='Mild and smooth blend featuring notes of toasted almond and dried cherry' />
+            <CollectionItem img={danche} title='Danche' description='Ethiopian hand-harvested blend densely packed with vibrant fruit notes' />
           </div>
         </section>
         <section className="features">
