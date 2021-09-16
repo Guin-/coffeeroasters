@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     colors: {
       white: '#fff',
+      transparent: 'transparent',
       darkCyan: '#0E8784',
       darkGray: '#333D4B',
       paleOrange: '#FDD6BA',
@@ -21,6 +22,9 @@ module.exports = {
       md: ['32px', '36px'],
       lg: ['40px', '48px'],
       xl: ['72px', '72px'],
+      collectionMobile: ['40px', '72px'],
+      collectionTablet: ['96px', '72px'],
+      collectionDesktop: ['150px', '115px']
     },
     extend: {
       height: theme => ({
