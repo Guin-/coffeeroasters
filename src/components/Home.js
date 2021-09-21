@@ -1,8 +1,12 @@
 import CollectionItem from './CollectionItem';
+import FeatureItem from './FeatureItem';
 import granEspresso from '../assets/home/desktop/image-gran-espresso.png';
 import planalto from '../assets/home/desktop/image-planalto.png';
 import piccollo from '../assets/home/desktop/image-piccollo.png';
 import danche from '../assets/home/desktop/image-danche.png';
+import bean from '../assets/home/desktop/icon-coffee-bean.svg';
+import gift from '../assets/home/desktop/icon-gift.svg';
+import truck from '../assets/home/desktop/icon-truck.svg';
 
 function Home () {
   return (
@@ -31,28 +35,21 @@ function Home () {
             <CollectionItem img={danche} title='Danche' description='Ethiopian hand-harvested blend densely packed with vibrant fruit notes' />
           </div>
         </section>
-        <section className="features">
-          <div className="features-description">
-            <h2>Why choose us?</h2>
-            <p>
-              A large part of our role is choosing which particular coffees will be featured
-              in our range. This means working closely with the best coffee growers to give
-              you a more impactful experience on every level.
-            </p>
+        <section className="features text-lightCream">
+          <div className="features-description-container bg-darkGray h-[900px] rounded ">
+            <div className="features-description bg-darkGray text-center pt-16 px-6 ">
+              <h2 className="text-featuresMobile md:text-lg">Why choose us?</h2>
+              <p className="pt-6">
+                A large part of our role is choosing which particular coffees will be featured
+                in our range. This means working closely with the best coffee growers to give
+                you a more impactful experience on every level.
+              </p>
+            </div>
           </div>
-          <div className="features-items">
-            <div className="features-item">
-              Best quality
-              Discover an endless variety of the world’s best artisan coffee from each of our roasters.
-            </div>
-            <div className="features-item">
-              Exclusive benefits
-              Special offers and swag when you subscribe, including 30% off your first shipment.
-            </div>
-            <div className="features-item">
-              Free shipping
-              We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.
-            </div>
+          <div className="features-items px-6 flex flex-col lg:flex-row" style={{marginTop: '-600px'}}>
+            <FeatureItem img={bean} title='Best quality' description='Discover an endless variety of the world’s best artisan coffee from each of our roasters.' />
+            <FeatureItem img={gift} title='Exclusive benefits' description='Special offers and swag when you subscribe, including 30% off your first shipment.' />
+            <FeatureItem img={truck} title='Free shipping' description='We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.' />
           </div>
         </section>
         <section className="how-to">

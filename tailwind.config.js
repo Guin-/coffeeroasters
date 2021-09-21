@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -24,7 +25,8 @@ module.exports = {
       xl: ['72px', '72px'],
       collectionMobile: ['40px', '72px'],
       collectionTablet: ['96px', '72px'],
-      collectionDesktop: ['150px', '115px']
+      collectionDesktop: ['150px', '115px'],
+      featuresMobile: ['28px', '28px']
     },
     extend: {
       height: theme => ({
