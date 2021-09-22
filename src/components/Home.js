@@ -37,16 +37,16 @@ function Home () {
         </section>
         <section className="features text-lightCream">
           <div className="features-description-container bg-darkGray rounded ">
-            <div className="features-description bg-darkGray text-center pt-16 px-6 md:px-16 md:pt-14">
-              <h2 className="text-featuresMobile md:text-md">Why choose us?</h2>
-              <p className="pt-6">
+            <div className="features-description bg-darkGray text-center pt-16 px-6 md:px-16 md:pt-14 lg:px-80 lg:pt-28">
+              <h2 className="text-featuresMobile md:text-md lg:text-lg">Why choose us?</h2>
+              <p className="pt-6 lg:pt-8">
                 A large part of our role is choosing which particular coffees will be featured
                 in our range. This means working closely with the best coffee growers to give
                 you a more impactful experience on every level.
               </p>
             </div>
           </div>
-          <div className="features-items px-6 flex flex-col lg:flex-row">
+          <div className="features-items px-6 flex flex-col lg:flex-row lg:justify-center lg:px-20">
             <FeatureItem img={bean} title='Best quality' description='Discover an endless variety of the world’s best artisan coffee from each of our roasters.' />
             <FeatureItem img={gift} title='Exclusive benefits' description='Special offers and swag when you subscribe, including 30% off your first shipment.' />
             <FeatureItem img={truck} title='Free shipping' description='We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.' />
