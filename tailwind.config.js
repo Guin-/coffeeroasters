@@ -24,7 +24,8 @@ module.exports = {
       xl: ['72px', '72px'],
       collectionMobile: ['40px', '72px'],
       collectionTablet: ['96px', '72px'],
-      collectionDesktop: ['150px', '115px']
+      collectionDesktop: ['150px', '115px'],
+      featuresMobile: ['28px', '28px']
     },
     extend: {
       height: theme => ({
