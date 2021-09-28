@@ -1,5 +1,6 @@
 import CollectionItem from './CollectionItem';
 import FeatureItem from './FeatureItem';
+import HowToItem from './HowToItem';
 import granEspresso from '../assets/home/desktop/image-gran-espresso.png';
 import planalto from '../assets/home/desktop/image-planalto.png';
 import piccollo from '../assets/home/desktop/image-piccollo.png';
@@ -52,33 +53,34 @@ function Home () {
             <FeatureItem img={truck} title='Free shipping' description='We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.' />
           </div>
         </section>
-        <section className="how-to">
+        <section className="how-to py-28 md:py-36 lg:py-48 lg:pl-20">
           <div className="how-to-description">
-            <h3>How it works</h3>
-            <div className="line-image">line-image</div>
+            <h4 className="text-gray text-center md:text-left pb-20 md:pb-10 lg:pb-20">How it works</h4>
+            {/*
+            <div className="line-image">
+              <svg height="31" width="768">
+                <circle cx="3%" cy="15.5" r="14.5" fill="#FEFCF7" stroke="#0E8784" strokeWidth={2} />
+                <circle cx="33%" cy="15.5" r="14.5" fill="#FEFCF7" stroke="#0E8784" strokeWidth={2} />
+                <circle cx="66%" cy="15.5" r="14.5" fill="#FEFCF7" stroke="#0E8784" strokeWidth={2} />
+              </svg>
+            </div>
+          */}
           </div>
-          <div className="how-to-items">
-            <div className="how-to-item">
-              01
-              Pick your coffee
-              Select from our evolving range of artisan coffees. Our beans are ethically
+          <div className="how-to-items md:flex md:justify-between lg:max-w-5xl">
+            <HowToItem number="01"title="Pick your coffee"
+              description="Select from our evolving range of artisan coffees. Our beans are ethically
               sourced and we pay fair prices for them. There are new coffees in all profiles
-              every month for you to try out.
-            </div>
-            <div className="how-to-item">
-              02
-              Choose the frequency
-              Customize your order frequency, quantity, even your roast style and grind type.
-              Pause, skip or cancel your subscription with no commitment through our online portal.
-            </div>
-            <div className="how-to-item">
-              03
-              Receive and enjoy!
+              every month for you to try out."/>
+            <HowToItem number="02" title="Choose the frequency" description="Customize your order frequency, quantity, even your roast style and grind type.
+              Pause, skip or cancel your subscription with no commitment through our online portal." />
+            <HowToItem number="03" title="Recieve and enjoy!" description="
               We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
               world-class coffees curated to provide a distinct tasting experience.
-            </div>
+            " />
           </div>
-          <button>Create your plan</button>
+          <div className="text-center md:text-left pt-6 lg:pt-4">
+            <button className="text-lightCream bg-darkCyan font-serif rounded w-56 px-8 py-4">Create your plan</button>
+          </div>
         </section>
       </main>
     </div>
