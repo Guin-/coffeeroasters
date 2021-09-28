@@ -53,9 +53,10 @@ function Home () {
             <FeatureItem img={truck} title='Free shipping' description='We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.' />
           </div>
         </section>
-        <section className="how-to py-28 md:py-36">
+        <section className="how-to py-28 md:py-36 lg:py-48 lg:pl-20">
           <div className="how-to-description">
-            <h4 className="text-gray text-center md:text-left pb-20 md:pb-10">How it works</h4>
+            <h4 className="text-gray text-center md:text-left pb-20 md:pb-10 lg:pb-20">How it works</h4>
+            {/*
             <div className="line-image">
               <svg height="31" width="768">
                 <circle cx="3%" cy="15.5" r="14.5" fill="#FEFCF7" stroke="#0E8784" strokeWidth={2} />
@@ -63,8 +64,9 @@ function Home () {
                 <circle cx="66%" cy="15.5" r="14.5" fill="#FEFCF7" stroke="#0E8784" strokeWidth={2} />
               </svg>
             </div>
+          */}
           </div>
-          <div className="how-to-items md:flex md:justify-between">
+          <div className="how-to-items md:flex md:justify-between lg:max-w-5xl">
             <HowToItem number="01"title="Pick your coffee"
               description="Select from our evolving range of artisan coffees. Our beans are ethically
               sourced and we pay fair prices for them. There are new coffees in all profiles
@@ -76,7 +78,7 @@ function Home () {
               world-class coffees curated to provide a distinct tasting experience.
             " />
           </div>
-          <div className="text-center md:text-left pt-6">
+          <div className="text-center md:text-left pt-6 lg:pt-4">
             <button className="text-lightCream bg-darkCyan font-serif rounded w-56 px-8 py-4">Create your plan</button>
           </div>
         </section>
