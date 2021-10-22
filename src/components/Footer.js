@@ -6,8 +6,8 @@ import twitter from '../assets/shared/desktop/icon-twitter.svg'
 
 function Footer () {
   return (
-    <div className="footer bg-darkGray flex flex-col justify-center items-center text-center gap-12 md:gap-16 p-14">
-      <div className="content flex flex-col justify-between gap-12 md:gap-8">
+    <div className="footer bg-darkGray flex flex-col justify-center items-center text-center gap-12 md:gap-16 p-14 lg:flex-row lg:justify-between">
+      <div className="content flex flex-col justify-between gap-12 md:gap-8 lg:flex-row lg:gap-24">
         <div className="logo mx-auto">
           <img src={footerLogo} alt="logo" className="h-6 "/>
         </div>
