@@ -6,12 +6,12 @@ import twitter from '../assets/shared/desktop/icon-twitter.svg'
 
 function Footer () {
   return (
-    <div className="footer bg-darkGray flex flex-col justify-center items-center text-center gap-12 p-14">
-      <div className="content flex flex-col justify-between gap-12">
-        <div className="logo">
-          <img src={footerLogo} alt="logo" className="h-6"/>
+    <div className="footer bg-darkGray flex flex-col justify-center items-center text-center gap-12 md:gap-16 p-14">
+      <div className="content flex flex-col justify-between gap-12 md:gap-8">
+        <div className="logo mx-auto">
+          <img src={footerLogo} alt="logo" className="h-6 "/>
         </div>
-        <ul className="links text-gray uppercase flex flex-col justify-between gap-6">
+        <ul className="links text-gray uppercase flex flex-col justify-between gap-6 md:flex-row md:gap-8">
           <Link to='/'>Home</Link>
           <Link to='/about'>About us</Link>
           <Link to='/subscribe'>Create your plan</Link>
