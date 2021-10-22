@@ -12,13 +12,13 @@ function Footer () {
           <img src={footerLogo} alt="logo" className="h-6 "/>
         </div>
         <ul className="links text-gray uppercase flex flex-col justify-between gap-6 md:flex-row md:gap-8">
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About us</Link>
-          <Link to='/subscribe'>Create your plan</Link>
+          <Link to='/' className="hover:text-lightCream">Home</Link>
+          <Link to='/about' className="hover:text-lightCream">About us</Link>
+          <Link to='/subscribe' className="hover:text-lightCream">Create your plan</Link>
         </ul>
       </div>
       <div className="sm-icons flex gap-6" >
-        <img src={fb} alt="facebook icon" />
+        <img src={fb} alt="facebook icon"/>
         <img src={ig} alt="instagram icon" />
         <img src={twitter} alt="twitter icon" />
       </div>

@@ -20,7 +20,7 @@ function Home () {
               Start your mornings with the world’s best coffees. Try our expertly curated artisan
               coffees from our best roasters delivered directly to your door, at your schedule.
             </p>
-            <button className="text-lightCream bg-darkCyan font-serif rounded w-56 px-8 py-4">Create your plan</button>
+            <button className="text-lightCream bg-darkCyan font-serif rounded w-56 px-8 py-4 hover:bg-lightCyan">Create your plan</button>
           </div>
         </div>
       </header>
@@ -79,7 +79,7 @@ function Home () {
             " />
           </div>
           <div className="text-center md:text-left pt-6 lg:pt-4">
-            <button className="text-lightCream bg-darkCyan font-serif rounded w-56 px-8 py-4">Create your plan</button>
+            <button className="text-lightCream bg-darkCyan font-serif rounded w-56 px-8 py-4 hover:bg-lightCyan">Create your plan</button>
           </div>
         </section>
       </main>
