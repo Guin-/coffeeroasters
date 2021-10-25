@@ -8,8 +8,12 @@ import danche from '../assets/home/desktop/image-danche.png';
 import bean from '../assets/home/desktop/icon-coffee-bean.svg';
 import gift from '../assets/home/desktop/icon-gift.svg';
 import truck from '../assets/home/desktop/icon-truck.svg';
+import { useHistory } from 'react-router-dom';
 
 function Home () {
+  const history = useHistory();
+  const handleClick = () => history.push('/subscribe');
+
   return (
     <div>
       <header>
@@ -20,7 +24,7 @@ function Home () {
               Start your mornings with the world’s best coffees. Try our expertly curated artisan
               coffees from our best roasters delivered directly to your door, at your schedule.
             </p>
-            <button className="text-lightCream bg-darkCyan font-serif rounded w-56 px-8 py-4 hover:bg-lightCyan">Create your plan</button>
+            <button onClick={handleClick} className="text-lightCream bg-darkCyan font-serif rounded w-56 px-8 py-4 hover:bg-lightCyan">Create your plan</button>
           </div>
         </div>
       </header>
@@ -79,7 +83,7 @@ function Home () {
             " />
           </div>
           <div className="text-center md:text-left pt-6 lg:pt-4">
-            <button className="text-lightCream bg-darkCyan font-serif rounded w-56 px-8 py-4 hover:bg-lightCyan">Create your plan</button>
+            <button onClick={handleClick} className="text-lightCream bg-darkCyan font-serif rounded w-56 px-8 py-4 hover:bg-lightCyan">Create your plan</button>
           </div>
         </section>
       </main>
